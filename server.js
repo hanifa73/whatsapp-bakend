@@ -8,7 +8,7 @@ import cors from "cors";
 
 //app config
 const app=express();
-const port=process.env.PORT || 9000;
+const port=process.env.PORT || 8080
 //  const port= process.env.PORT || 'https://whatsapp-backend-me.herokuapp.com'; 
 const pusher = new Pusher({
   appId: "1140631",
@@ -89,7 +89,7 @@ app.post('/messages/new', (req,res) => {
 })
 //listen
 
-app.listen(process.env.PORT ||9000, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(process.env.PORT ||8080, () => console.log(`Example app listening at http://localhost:${port}`))
 
 
 
