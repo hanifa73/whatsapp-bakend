@@ -8,8 +8,8 @@ import cors from "cors";
 
 //app config
 const app=express();
-  const port=process.env.PORT || 9000
-//   const port= process.env.PORT || ('https://whatsapp-backend-me.herokuapp.com'); 
+const port=process.env.PORT || 9000
+//  const port= process.env.PORT || 'https://whatsapp-backend-me.herokuapp.com'; 
 const pusher = new Pusher({
   appId: "1140631",
   key: "34e9903e71ecc4fe1711",
