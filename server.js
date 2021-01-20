@@ -8,8 +8,8 @@ import cors from "cors";
 
 //app config
 const app=express();
-const port=process.env.PORT || 9000
-
+//  const port=process.env.PORT || 9000
+//   const port= process.env.PORT || ('https://whatsapp-backend-me.herokuapp.com'); 
 const pusher = new Pusher({
   appId: "1140631",
   key: "34e9903e71ecc4fe1711",
@@ -63,7 +63,7 @@ changeStream.on("change", (change) =>{
 
     });
 })
-app.get("/",(req,res)=>res.status(200).send('hello world'));
+app.get("/",(req,res)=>res.status(200).send('hello hanifa'));
 
 
 app.get('/messages/sync', (req,res) => {
@@ -88,7 +88,7 @@ app.post('/messages/new', (req,res) => {
     })
 })
 //listen
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen('https://whatsapp-backend-me.herokuapp.com', () => console.log(`Example app listening at http://localhost:${port}`))
 
 
 
